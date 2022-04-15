@@ -1,0 +1,11 @@
+.navbar {
+    position: sticky;
+    top: 10px;
+    .socials {
+        display: flex;
+    
+        .item {
+            margin: 0 .75rem;
+        }
+    }
+}
