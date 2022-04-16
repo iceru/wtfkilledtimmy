@@ -235,7 +235,7 @@ const Home = () => {
     return (
         <>
             <div className="home container">
-                <div className="title text-center fw-bold fs-4">
+                <div className="title text-center fw-bold fs-4 animate__animated animate__fadeInDown animate__delay-.5s">
                     WTFKILLEDTIMMY IS THE <br />
                     WORLD’S FIRST CRAYONS AND PENCILS <br />
                     GENERATIVE PFP NFTS1
@@ -260,7 +260,7 @@ const Home = () => {
                     </a>
                 </div>
                 <div className="actions">
-                    <div className="item">
+                    <div className="item animate__animated animate__fadeInLeft animate__delay-1s">
                         <a href="https://rarity.wtfkilledtimy.online/guid">
                             <img src={Rarity} alt="Rarity" />
                         </a>
@@ -271,7 +271,7 @@ const Home = () => {
                         </a>
                         <div>Coming Soon</div>
                     </div>
-                    <div className="item">
+                    <div className="item animate__animated animate__fadeInRight animate__delay-1s">
                         <a href="#">
                             <img src={Mint} alt="Mint" />
                         </a>
@@ -282,8 +282,8 @@ const Home = () => {
             <div className="background">
                 <div className="container">
                     <div className="text">
-                        <h3>Background Story</h3>
-                        <p>
+                        <h3 data-aos="fade-up">Background Story</h3>
+                        <p data-aos="fade-up" data-aos-delay="300">
                             “Who The F*** Killed Timmy? That’s a mystery that we couldn’t Solve.
                             I’m announced missing by the police on July 12th, 1995, when I went to
                             play outside my father’s house. Declared legally dead seven years
@@ -309,13 +309,13 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className="kepo">
-                    <img src={Kepo} alt='kepo' />
+                <div className="kepo" >
+                    <img data-aos="fade-left" src={Kepo} alt='kepo' />
                 </div>
             </div>
 
             <div className="container">
-                <div className="roadmap">
+                <div className="roadmap" data-aos="fade-right">
                     <h3>Roadmap</h3>
                     <UncontrolledAccordion stayOpen>
                         {roadmap.map((item, key) => {
@@ -334,13 +334,13 @@ const Home = () => {
 
             <div className="launching">
                 <div className="content">
-                    <div className="text">
+                    <div className="text" data-aos="fade-down">
                         Launching Soon...
                     </div>
-                    <div className="date-launch">
+                    <div className="date-launch" data-aos="fade-down" data-aos-delay="300">
                         <img src={DateLaunch} />
                     </div>
-                    <div className="countdown">
+                    <div className="countdown" data-aos="fade-down" data-aos-delay="500">
                         <Countdown date={date} renderer={props =>
                             <div className="d-flex justify-content-center align-items-center">
                                 <div className="item">
@@ -365,12 +365,12 @@ const Home = () => {
                             </div>} />
                     </div>
                 </div>
-                <div className="kepo-2">
-                    <img src={Kepo2} alt='kepo-2' />
+                <div className="kepo-2"  >
+                    <img data-aos="fade-right" data-aos-delay="500" src={Kepo2} alt='kepo-2' />
                 </div>
             </div>
             <div className="container">
-                <div className="faq">
+                <div className="faq" data-aos="fade-right">
                     <h4>FAQ</h4>
                     <UncontrolledAccordion stayOpen>
                         {faq.map((item, key) => {
@@ -391,7 +391,7 @@ const Home = () => {
                         {
                             teams.map((item) => {
                                 return (
-                                    <div className="team-item">
+                                    <div className="team-item" data-aos="flip-right">
                                         <div className="team-img">
                                             <img src={item.image} alt={item.name} />
                                         </div>
@@ -408,29 +408,29 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="cta">
-                    <h1>which timy are you?</h1>
+                    <h1 data-aos="fade-down">which timy are you?</h1>
 
                     <div className="row first-row">
                         <div className="col-12 col-lg-6">
-                            <div className="pfp">
+                            <div className="pfp" data-aos="zoom-in-right">
                                 <img src={PFP} alt='PFP' />
                             </div>
                         </div>
                         <div className="col-12 col-lg-6">
-                            <div className="join">
+                            <div className="join" data-aos="zoom-in-left">
                                 join my discord
                                 to know me better
                             </div>
                         </div>
                     </div>
                     <div className="row last-row">
-                        <div className="col-12 col-lg-6 about">
-                                WTFKilledTimmy is the world’s first deflationary
-                                hand-drawn generative collection of 870 NFTs
-                                made using crayons & pencils that
+                        <div className="col-12 col-lg-6 about" data-aos="zoom-in-right">
+                            WTFKilledTimmy is the world’s first deflationary
+                            hand-drawn generative collection of 870 NFTs
+                            made using crayons & pencils that
                         </div>
-                        <div className="col-12 col-lg-6 solana">
-                                <img src={Solana} alt='PFP' />
+                        <div className="col-12 col-lg-6 solana" data-aos="zoom-in-left">
+                            <img src={Solana} alt='PFP' />
                         </div>
                     </div>
                 </div>
