@@ -31,7 +31,7 @@ import Oki from "../../assets/images/Oki.png";
 import Lizzie from "../../assets/images/Lizzie.png";
 
 import PFP from "../../assets/images/PFP.png";
-import Solana from "../../assets/images/powered by.png";
+import Solana from "../../assets/images/solana.png";
 
 import "./style.scss";
 
@@ -424,16 +424,13 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="row last-row">
-                        <div className="col-12 col-lg-6">
-                            <p>
+                        <div className="col-12 col-lg-6 about">
                                 WTFKilledTimmy is the world’s first deflationary
                                 hand-drawn generative collection of 870 NFTs
                                 made using crayons & pencils that
-                                rested in peace on SOLana blockchain.
-                            </p>
                         </div>
-                        <div className="col-12 col-lg-6 text-end">
-                            <img src={Solana} alt='PFP' />
+                        <div className="col-12 col-lg-6 solana">
+                                <img src={Solana} alt='PFP' />
                         </div>
                     </div>
                 </div>

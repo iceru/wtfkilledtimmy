@@ -1,3 +1,5 @@
+@import '../../Variable.scss';
+
 .navbar {
     position: sticky;
     top: 10px;
@@ -15,6 +17,24 @@
 
             img {
                 max-height: 40px;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    @include breakpoint(untilTablet) {
+        .socials {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+
+            img {
+                max-width: 50px;
             }
         }
     }

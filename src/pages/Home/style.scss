@@ -1,11 +1,13 @@
+@import '../../Variable.scss';
+
 @mixin default {
     width: 80%;
     margin: auto;
     padding: 120px 0;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint(untilTablet) {
         width: 100%;
-        padding: 40px 0;
+        padding: 80px 1.5rem;
     }
 }
 
@@ -48,11 +50,19 @@
         .item {
             margin: 0 1rem;
             display: block;
+
+            img {
+                width: 100%;
+            }
             > div {
                 text-align: end;
                 font-weight: bold;
                 font-size: 12px;
                 margin-top: -.25rem;
+
+                @include breakpoint(untilTablet) {
+                    font-size: 8px;
+                }
             }
         }
     }
@@ -71,6 +81,16 @@
         transform: translateY(-50%);
         img {
             max-width: 150px
+        }
+    }
+
+    @include breakpoint(untilTablet) {
+        .text {
+            padding: 80px 1rem;
+        }
+
+        .kepo {
+            display: none
         }
     }
 }
@@ -94,6 +114,14 @@
         text-align: center;
         width: 25%;
         padding: .75rem;
+
+        @include breakpoint(untilTablet) {
+            width: 33%;
+        }
+
+        @include breakpoint(mobileonly) {
+            width: 50%;
+        }
         .team-img {
             margin-bottom: 1rem;
             img {
@@ -146,6 +174,42 @@
                 }
             }
         }
+
+        @include breakpoint(untilTablet) {
+            .text {
+                margin-bottom: 3rem;
+            }
+            .date-launch {
+                margin-bottom: 3rem;
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .countdown {
+                .d-flex {
+                    flex-wrap: wrap;
+                    width: 60%;
+                    margin: auto;
+                }
+                .item {
+                    font-size: 2.5rem;
+                    margin: .5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    .title {
+                        font-size: 1.15rem;
+                        margin-bottom: 0;
+                    }
+
+                    &.separator {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 
     .kepo-2 {
@@ -156,6 +220,9 @@
 
         img {
             max-width: 150px;
+        }
+        @include breakpoint(untilTablet) {
+            display: none;
         }
     }
 }
@@ -187,6 +254,50 @@
 
     .last-row {
         align-items: center;
+
+        .solana {
+            text-align: end;
+        }
+
+        img {
+            max-width: 250px;
+        }
+    }
+
+    @include breakpoint(mobileonly) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    @include breakpoint(untilTablet) {
+        h1 {
+            font-size: 3rem;
+        }
+
+        .first-row {
+            .pfp {
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+
+            .join {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+
+        .last-row {
+            .about {
+                order: 2;
+            }
+
+            .solana {
+                order: 1;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+        }
     }
    
 }
