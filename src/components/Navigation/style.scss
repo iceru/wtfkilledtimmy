@@ -39,3 +39,37 @@
         }
     }
 }
+
+.offcanvas {
+    max-width: 50%;
+    background-color: rgba($color: #d2c94c, $alpha: 0.8);
+
+    .offcanvas-body {
+        padding-right: 0;
+        padding-top: 4rem;
+    }
+
+    .close-nav {
+        text-align: end;
+        padding-right: 1rem;
+        margin-bottom: 3rem;
+        img {
+            max-width: 30px;
+        }
+    }
+
+    .kepo {
+        margin-bottom: 2rem;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .item {
+            margin-bottom: 2rem;
+        }
+    }
+}
