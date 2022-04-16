@@ -8,17 +8,13 @@ import KepoNav from '../../assets/images/kepo-nav.png';
 import CloseNav from '../../assets/images/close-nav.png';
 
 import './style.scss';
-import { Offcanvas, OffcanvasBody, OffcanvasHeader } from "reactstrap";
+import { Offcanvas, OffcanvasBody } from "reactstrap";
 
 const Navigation = () => {
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
         setOpen(!open);
-    }
-
-    const close = () => {
-        setOpen(false);
     }
     return (
         <>

@@ -266,13 +266,13 @@ const Home = () => {
                         </a>
                     </div>
                     <div className="item">
-                        <a href="#">
+                        <a href="/">
                             <img src={ArtSchool} alt="Art School" />
                         </a>
                         <div>Coming Soon</div>
                     </div>
                     <div className="item animate__animated animate__fadeInRight animate__delay-1s">
-                        <a href="#">
+                        <a href="/">
                             <img src={Mint} alt="Mint" />
                         </a>
                         <div>Coming Soon</div>
@@ -338,7 +338,7 @@ const Home = () => {
                         Launching Soon...
                     </div>
                     <div className="date-launch" data-aos="fade-down" data-aos-delay="300">
-                        <img src={DateLaunch} />
+                        <img src={DateLaunch} alt='launch' />
                     </div>
                     <div className="countdown" data-aos="fade-down" data-aos-delay="500">
                         <Countdown date={date} renderer={props =>
