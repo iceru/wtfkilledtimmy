@@ -22,21 +22,22 @@ import Kepo from "../../assets/images/kepo.png";
 import Kepo2 from "../../assets/images/Kepo 2.png";
 import DateLaunch from '../../assets/images/date-launch.png';
 
-import Arman from "../../assets/images/Arman.png";
-import Andro from "../../assets/images/Andro.png";
-import Ghina from "../../assets/images/Ghina.png";
-import Dika from "../../assets/images/Dika.png";
-import Cumil from "../../assets/images/Cumil.png";
-import Oki from "../../assets/images/Oki.png";
-import Lizzie from "../../assets/images/Lizzie.png";
+import Arman from "../../assets/images/1-Moharmansjah.png";
+import Andro from "../../assets/images/2-The Metronome.png";
+import Ghina from "../../assets/images/3-divinefeminlne.png";
+import Dika from "../../assets/images/4-Dikarld.png";
+import Cumil from "../../assets/images/5-Cumil.png";
+import Oki from "../../assets/images/6-Arief4Real.png";
+import Lizzie from "../../assets/images/7-Lizzie.png";
 
 import PFP from "../../assets/images/PFP.png";
 import Solana from "../../assets/images/solana.png";
+import Plus from "../../assets/images/plus-icon.png";
 
 import "./style.scss";
 
 const Home = () => {
-    const date = moment.utc('28 May 2022 19:00');
+    const date = moment.utc('27 May 2022 19:00');
 
     const faq = [
         {
@@ -117,89 +118,89 @@ const Home = () => {
     const roadmap = [
         {
             title: 'Pre-School',
-            content: `Gather a Team <br />
-            Generate the Artworks <br />
-            Set up an Instagram and Twitter <br />
-            Set up Discord <br />
-            Make a Roadmap, White Paper, and Tokenomics <br />
-            Set up Website <br />
-            Set up Smart Contract for DumbTimmy <br />
-            Set up Smart Contract for $TOYS <br />`
+            content: `<ul>
+                <li class='checked'>Gather a Team </li>
+                <li class='checked'>Generate the Artworks </li>
+                <li class='checked'>Set up an Instagram and Twitter </li>
+                <li class='checked'>Set up Discord </li>
+                <li class='checked'>Make a Roadmap, White Paper, and Tokenomics </li>
+                <li>Set up Website </li>
+                <li>Set up Smart Contract for DumbTimmy </li>
+                <li>Set up Smart Contract for $TOYS </li>
+            </ul>`
         },
         {
             title: 'First grade',
-            content: `Instagram AR Filter of “Timmy is Missing” <br />
-            Comic about the background story<br />
+            content: `<ul><li class='checked'>Instagram AR Filter of “Timmy is Missing” </li>
+                <li>Comic about the background story
                 (first 2 pages are public, second 4 pages for holders
-                only)
-            Marketing! <br />
-            Recruit new Team Member/s <br />
-            Giveaways! <br />
-            Mint Day (May 27th, 2022) <br />
-            Set up Secondary Market <br />
-            3.12% Royalties goes to Community Wallet <br />
-            Charity to Selected Organizations <br />
-            Announce Staking and Skills utility`
+                only)</li>
+                <li>Marketing! </li>
+                <li>Recruit new Team Member/s </li>
+                <li>Giveaways! </li>
+                <li>Mint Day (May 27th, 2022) </li>
+                <li>Set up Secondary Market </li>
+                <li>3.12<span class='normalFont'>%</span> Royalties goes to Community Wallet </li>
+                <li>Charity to Selected Organizations </li>
+                <li>Announce Staking and Skills utility</li></ul>`
         },
         {
             title: 'Second grade',
-            content: `Stake to create new NFTs based on DumbTimmy skills <br />
-            (“Toys” NFTs) <br />
-            Publish Rarity Rank on Solana NFTs rarity site <br />
-                (MetaRarity and or Rarity Sniper) <br />
-            Access to print the NFTs with Timmy’s signature <br />
-            Giveaways! <br />
-            Release a 1-minute 2D Animation of DumbTimmy <br />
-            Special 1/1 NFT Stealth Auction on selected Solana <br />
-                NFT Marketplace`
+            content: `<ul><li>Stake to create new NFTs based on DumbTimmy skills (“Toys” NFTs) </li>
+            <li>Publish Rarity Rank on Solana NFTs rarity site (MetaRarity and or Rarity Sniper) </li>
+            <li>Access to print the NFTs with Timmy’s signature </li>
+            <li>Giveaways!</li>
+            <li>Release a 1-minute 2D Animation of DumbTimmy </li>
+            <li>Special 1/1 NFT Stealth Auction on selected Solana NFT Marketplace</li></ul>`
         },
         {
             title: 'Third grade',
-            content: `Sell new staked NFT on Secondary Market. 50 percent
+            content: `<ul><li>Sell new staked NFT on Secondary Market. 50 percent
             of Initial Sales distributed to new NFTs based on
             DumbTimmy skills holders, 25 percent for Community
             Wallet, 25 percent for WTFKilledTimmy Team. 3.12 percent
-            Royalties goes to Community Wallet <br />
-            Publish new “Toys” NFTs rarity rank on Solana NFTs <br />
-                rarity site (MetaRarity and or Rarity Sniper) <br />
-            Giveaways! <br />
-            Release another 1-minute 2D Animation of DumbTimmy <br />
-                and his “Toys” NFTs <br />
-            Open Exclusive Merchandise Shop on Website <br />`
+            Royalties goes to Community Wallet </li>
+            <li>Publish new “Toys” NFTs rarity rank on Solana NFTs
+                rarity site (MetaRarity and or Rarity Sniper) </li>
+                <li>Giveaways! </li>
+                <li>Release another 1-minute 2D Animation of DumbTimmy
+                and his “Toys” NFTs </li>
+                <li> Open Exclusive Merchandise Shop on Website </li></ul>`
         },
         {
             title: 'Fourth grade',
-            content: `Option 1: Limited 87 NFTs with Handcrafted WTFKilledTimmy
+            content: `<ul><li><b>Option 1:</b> Limited 87 NFTs with Handcrafted WTFKilledTimmy
                 painted and baked model compound with his attributes
                 made on real fabric generated as 3D NFTs or
-                Option 2: Limited 87 WTFKilledTimmy NFTs painted by
-                children in need on the selected organization <br />
-            Giveaways! <br />
-            Mint Day in Late September or Mid October 2022
+                <b>Option 2:</b> Limited 87 WTFKilledTimmy NFTs painted by
+                children in need on the selected organization </li>
+                <li>Giveaways! </li>
+                <li>Mint Day in Late September or Mid October 2022
                 50 WLs for DumbTimmy Holders (using $TOYS) and
                 37 for Public (using $SOL) or 50 WLs for DumbTimmy
-                Holders and 37 for Public (using $SOL) <br />
-            3.12 percent of Royalties go to Community Wallet,
+                Holders and 37 for Public (using $SOL) </li>
+                <li>3.12 percent of Royalties go to Community Wallet,
                 3,5 percent goes to Model Compound Artist/s the rest
                 is divided from the royalty allocation chart based
                 on the percentage on the royalty allocation page or
-                6.87 percent for the fellow children who made the NFTs <br />
-            Publish new “Handcrafted WTFKilledTimmy” NFTs rarity rank
-                on Solana NFTs rarity site (MetaRarity and or Rarity Sniper)`
+                6.87 percent for the fellow children who made the NFTs </li>
+                <li> Publish new “Handcrafted WTFKilledTimmy” NFTs rarity rank
+                on Solana NFTs rarity site (MetaRarity and or Rarity Sniper)</li></ul>`
         },
         {
             title: 'Final grade',
-            content: `5 Minutes 2D animation of Timmy’s journey finding justice
-                and his killer <br />
-                Free Timy looking for a new adventure with his new family`
+            content: `<ul><li>5 Minutes 2D animation of Timmy’s journey finding justice
+                and his killer </li>
+                <li>Free Timy looking for a new adventure with his new family</li></ul>`
         },
     ]
 
     const teams = [
         {
             name: "Moharmansjah",
-            title: "Founder, Project Lead Main Illustrator",
-            image: Arman
+            title: "Founder, Project Lead <br /> Main Illustrator",
+            image: Arman,
+            link: 'https://instagram.com/moharmansjah'
         },
         {
             name: "The Metronome",
@@ -238,7 +239,7 @@ const Home = () => {
                 <div className="title text-center fw-bold fs-4 animate__animated animate__fadeInDown animate__delay-.5s">
                     WTFKILLEDTIMMY IS THE <br />
                     WORLD’S FIRST CRAYONS AND PENCILS <br />
-                    GENERATIVE PFP NFTS1
+                    GENERATIVE PFP NFTS
                 </div>
                 <div className="gif">
                     <img src={Gif} alt="WTFKILLEDTIMMY" />
@@ -261,9 +262,10 @@ const Home = () => {
                 </div>
                 <div className="actions">
                     <div className="item animate__animated animate__fadeInLeft animate__delay-1s">
-                        <a href="https://rarity.wtfkilledtimy.online/guid">
+                        <a href="/">
                             <img src={Rarity} alt="Rarity" />
                         </a>
+                        <div>Coming Soon</div>
                     </div>
                     <div className="item">
                         <a href="/">
@@ -278,7 +280,7 @@ const Home = () => {
                         <div>Coming Soon</div>
                     </div>
                 </div>
-            </div>
+            </div >
             <div className="background">
                 <div className="container">
                     <div className="text">
@@ -294,25 +296,25 @@ const Home = () => {
                             Carla’s Camera.
                             <br /> <br />
                             My Stepmother always blows her boyfriend in my father’s house when my
-                            Dad works abroad. When my Dad got home, either he play the lottery too
-                            much or he treats me like a piece of sh*t. There’s one time when he
+                            Dad works abroad.When my Dad got home, either he play the lottery too
+                            much or he treats me like a piece of sh * t.There’s one time when he
                             drank and ran out of beer, he asked me to go to the store to get one.
-                            I asked him, “where’s the money?” and he just beat the sh*t out of me
-                            without saying anything, then calmly open my pants, and starts f***ing
+                            I asked him, “where’s the money ?” and he just beat the sh * t out of me
+                            without saying anything, then calmly open my pants, and starts f *** ing
                             me.
                             <br /> <br />
                             It traumatizes me so bad and I told my adopted sister, Carla, about
-                            that. When my Dad got home, Carla starts yelling to my Dad about how
-                            f***ed up he is, but she ended up just like me, with her messy hair
-                            and sticky face. I noticed that she can’t even walk straight for three
+                            that.When my Dad got home, Carla starts yelling to my Dad about how
+                            f *** ed up he is, but she ended up just like me, with her messy hair
+                            and sticky face.I noticed that she can’t even walk straight for three
                             days.” -Timy
-                        </p>
-                    </div>
-                </div>
+                        </p >
+                    </div >
+                </div >
                 <div className="kepo" >
                     <img data-aos="fade-left" src={Kepo} alt='kepo' />
                 </div>
-            </div>
+            </div >
 
             <div className="container">
                 <div className="roadmap" data-aos="fade-right">
@@ -321,7 +323,14 @@ const Home = () => {
                         {roadmap.map((item, key) => {
                             return (
                                 <AccordionItem>
-                                    <AccordionHeader targetId={`${key}`}>{item.title}</AccordionHeader>
+                                    <AccordionHeader targetId={`${key}`}>
+                                        <div className="icon-plus">
+                                            <img src={Plus} alt='expand' />
+                                        </div>
+                                        <div className="title">
+                                            {item.title}
+                                        </div>
+                                    </AccordionHeader>
                                     <AccordionBody accordionId={`${key}`} >
                                         <div dangerouslySetInnerHTML={{ __html: item.content }} />
                                     </AccordionBody>
@@ -376,7 +385,14 @@ const Home = () => {
                         {faq.map((item, key) => {
                             return (
                                 <AccordionItem>
-                                    <AccordionHeader targetId={`${key}`}>{item.title}</AccordionHeader>
+                                    <AccordionHeader targetId={`${key}`}>
+                                        <div className="icon-plus">
+                                            <img src={Plus} alt='expand' />
+                                        </div>
+                                        <div className="title">
+                                            {item.title}
+                                        </div>
+                                    </AccordionHeader>
                                     <AccordionBody accordionId={`${key}`} >
                                         <div dangerouslySetInnerHTML={{ __html: item.content }} />
                                     </AccordionBody>
@@ -391,7 +407,7 @@ const Home = () => {
                         {
                             teams.map((item) => {
                                 return (
-                                    <div className="team-item" data-aos="flip-right">
+                                    <div onClick={() => { window.location.href = item.link }} style={{ cursor: item.link ? 'pointer' : 'auto' }} className="team-item" data-aos="flip-right">
                                         <div className="team-img">
                                             <img src={item.image} alt={item.name} />
                                         </div>
@@ -399,7 +415,7 @@ const Home = () => {
                                             {item.name}
                                         </div>
                                         <div className="team-title">
-                                            {item.title}
+                                            <div dangerouslySetInnerHTML={{ __html: item.title }} />
                                         </div>
                                     </div>
                                 )
@@ -412,9 +428,9 @@ const Home = () => {
 
                     <div className="row first-row">
                         <div className="col-12 col-lg-6">
-                            <div className="pfp" data-aos="zoom-in-right">
+                            <a href="https://discord.gg/mgTURNpJ3v" className="pfp" data-aos="zoom-in-right">
                                 <img src={PFP} alt='PFP' />
-                            </div>
+                            </a>
                         </div>
                         <div className="col-12 col-lg-6">
                             <div className="join" data-aos="zoom-in-left">
@@ -427,10 +443,12 @@ const Home = () => {
                         <div className="col-12 col-lg-6 about" data-aos="zoom-in-right">
                             WTFKilledTimmy is the world’s first deflationary
                             hand-drawn generative collection of 870 NFTs
-                            made using crayons & pencils that
+                            made using crayons & pencils that rested in peace on SOLana blockchain.
                         </div>
                         <div className="col-12 col-lg-6 solana" data-aos="zoom-in-left">
-                            <img src={Solana} alt='PFP' />
+                            <a href="https://solana.com" target='_blank' rel='noreferrer'>
+                                <img src={Solana} alt='PFP' />
+                            </a>
                         </div>
                     </div>
                 </div>

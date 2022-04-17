@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="d-flex justify-content-center">
                     <div className="item">{`${moment().format('YYYY')} WTFKILLEDTIMMY.`}</div>
                     <div className="item">All Rights Reserved</div>
-                    <a href="/" className="item">Terms & Conditions</a>
+                    <a href="https://docs.google.com/document/d/12d5SXGIDPRC-WOJbdA4YILk0f1MwrH9t" className="item">Terms & Conditions</a>
                 </div>
             </div>
         </div>
